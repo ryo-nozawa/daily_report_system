@@ -60,9 +60,9 @@ public interface JpaConst {
     //社員番号とハッシュか済みパスワードを受験に未削除の従業員を取得する
     String Q_EMP_GET_BY_CODE_AND_PASS = ENTITY_EMP + ".getByCodeAndPass";
     String Q_EMP_GET_BY_CODE_AND_PASS_DEF = "SELECT e FROM Employee AS e WHERE e.deleteFlag = 0 AND e.code = :" + JPQL_PARM_CODE + " AND e.password = :" + JPQL_PARM_PASSWORD;
-    //指定した社員番号を保持する従業員の件数を取得する
-    String Q_EMP_RESISTERED_BY_CODE = ENTITY_EMP + ".countResisteredByCode";
-    String Q_EMP_RESISTERED_BY_CODE_DEF = "SELECT COUNT(e) FROM Employee AS e WHERE e.code = :" + JPQL_PARM_CODE;
+  //指定した社員番号を保持する従業員の件数を取得する
+    String Q_EMP_COUNT_REGISTERED_BY_CODE = ENTITY_EMP + ".countRegisteredByCode";
+    String Q_EMP_COUNT_REGISTERED_BY_CODE_DEF = "SELECT COUNT(e) FROM Employee AS e WHERE e.code = :" + JPQL_PARM_CODE;
 
     //全ての日報をIDの降順に取得する
     String Q_REP_GET_ALL = ENTITY_REP + ".getAll";
