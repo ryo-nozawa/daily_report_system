@@ -8,7 +8,7 @@ import constants.JpaConst;
 import models.Employee;
 
 //従業員データのDTOモデルからViewモデルに変換を行うクラス
-public class EmployeeComverter {
+public class EmployeeConverter {
      /**
      * ViewモデルのインスタンスからDTOモデルのインスタンスを作成する
      * @param ev EmployeeViewのインスタンス
