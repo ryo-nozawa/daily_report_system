@@ -2,8 +2,8 @@ package constants;
 
 /**
  * 画面の項目値等を定義するEnumクラス
+ *
  */
-
 public enum AttributeConst {
 
     //フラッシュメッセージ
@@ -18,10 +18,10 @@ public enum AttributeConst {
     ERR("errors"),
 
     //ログイン中の従業員
-    LOGIN_ENP("login_employee"),
+    LOGIN_EMP("login_employee"),
 
     //ログイン画面
-    LOGIN_ERR("loginerror"),
+    LOGIN_ERR("loginError"),
 
     //従業員管理
     EMPLOYEE("employee"),
@@ -44,17 +44,15 @@ public enum AttributeConst {
     //日報管理
     REPORT("report"),
     REPORTS("reports"),
-    REP_COUNT("report_count"),
+    REP_COUNT("reports_count"),
     REP_ID("id"),
     REP_DATE("report_date"),
     REP_TITLE("title"),
     REP_CONTENT("content_msg");
 
-    //文字列を保持するフィールド
     private final String text;
     private final Integer i;
 
-    //コンストラクタ
     private AttributeConst(final String text) {
         this.text = text;
         this.i = null;
@@ -65,7 +63,6 @@ public enum AttributeConst {
         this.i = i;
     }
 
-    //文字列取得用メソッド
     public String getValue() {
         return this.text;
     }
